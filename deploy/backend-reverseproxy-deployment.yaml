@@ -17,6 +17,14 @@ spec:
       containers:
       - name: reverseproxy
         image: papiknomic/reverseproxy:v1
+        imagePullPolicy: Always          
+        resources:
+          requests:
+            memory: "100Mi"
+            cpu: "250m"
+          limits:
+            memory: "1024Mi"
+            cpu: "1000m" 
         ports:
         - containerPort: 8080
         

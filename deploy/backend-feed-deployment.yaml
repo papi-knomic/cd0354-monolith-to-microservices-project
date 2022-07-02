@@ -17,6 +17,14 @@ spec:
       containers:
       - name: udagram-api-feed
         image: papiknomic/udagram-api-feed:v1
+        imagePullPolicy: Always          
+        resources:
+          limits:
+            memory: "4096Mi"
+            cpu: "2"
+          requests:
+            memory: "1024Mi"
+            cpu: "300m" 
         ports:
         - containerPort: 8080
         envFrom:
