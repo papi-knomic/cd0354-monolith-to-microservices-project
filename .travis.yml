@@ -19,7 +19,7 @@ script:
   - docker build -t udagram-api-feed ./udagram-api-feed
   - docker build -t udagram-frontend ./udagram-frontend
   - docker build -t reverseproxy ./udagram-reverseproxy
-  - docker tag udagram-api-user papiknomic/udagram-api-user:v2
+  - docker tag udagram-api-user papiknomic/udagram-api-user:v1
   - docker tag udagram-api-feed papiknomic/udagram-api-feed:v1
   - docker tag udagram-frontend papiknomic/udagram-frontend:v2
   - docker tag reverseproxy papiknomic/reverseproxy:v1
@@ -28,6 +28,6 @@ script:
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push papiknomic/udagram-api-feed:v1
-  - docker push papiknomic/udagram-api-user:v2
+  - docker push papiknomic/udagram-api-user:v1
   - docker push papiknomic/udagram-frontend:v2
   - docker push papiknomic/reverseproxy:v1

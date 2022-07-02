@@ -9,7 +9,8 @@ data:
   APP_ENV: production
   AWS_BUCKET: udagram-micro-spermy-dev
   AWS_REGION: us-east-2
-  AWS_PROFILE: default
   URL: http://localhost:8100
+  POSTGRES_DATABASE: udagramknomicdb
   POSTGRES_HOST: database-1.ccpf2ruyv2rx.us-east-2.rds.amazonaws.com
-  POSTGRES_DB: udagramknomicdb
+  AWS_PROFILE: default
+  JWT_SECRET: testing
