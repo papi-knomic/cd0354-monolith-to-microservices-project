@@ -26,14 +26,12 @@ spec:
             memory: "1024Mi"
             cpu: "300m" 
         ports:
-        - containerPort: 8080
+          - containerPort: 8080
         envFrom:
-          - secretRef:
-              name: aws-secret
-          - secretRef:
-              name: env-secret
-      volumes:
-      - configMap:
-          name: env-configmap
-        name: feed-volume
+        - secretRef:
+            name: aws-secret
+        - secretRef:
+            name: env-secret
+        - configMapRef:
+            name: env-configmap
         

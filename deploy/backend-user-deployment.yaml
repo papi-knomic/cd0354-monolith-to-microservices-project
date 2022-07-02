@@ -28,11 +28,9 @@ spec:
         ports:
         - containerPort: 8080
         envFrom:
+        - configMapRef:
+            name: env-configmap
         - secretRef:
             name: aws-secret
         - secretRef:
             name: env-secret
-      volumes:
-      - configMap:
-          name: env-configmap
-        name: user-volume
