@@ -13,7 +13,11 @@ import {V0_FEED_MODELS} from './controllers/v0/model.index';
   await sequelize.addModels(V0_FEED_MODELS);
 
   console.debug("Initialize database connection...");
+  try {
   await sequelize.sync();
+  } catch (error) {
+    console.log(error);
+  }
 
   const app = express();
   const port = process.env.PORT || 8080;
