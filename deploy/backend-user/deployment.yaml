@@ -36,11 +36,11 @@ spec:
               configMapKeyRef:
                 name: env-configmap
                 key: POSTGRES_HOST
-          - name: POSTGRES_DATABASE
+          - name: POSTGRES_DB
             valueFrom:
               configMapKeyRef:
                 name: env-configmap
-                key: POSTGRES_DATABASE
+                key: POSTGRES_DB
           - name: AWS_REGION
             valueFrom:
               configMapKeyRef:
