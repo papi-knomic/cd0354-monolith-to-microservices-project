@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: papiknomic/udagram-frontend:v2
+        image: papiknomic/udagram-frontend:v3
         ports:
           - containerPort: 8100
         imagePullPolicy: Always
