@@ -11,6 +11,6 @@ data:
   AWS_REGION: us-east-2
   URL: http://localhost:8100
   POSTGRES_DB: udagramdb
-  POSTGRES_HOST: database-1.ccpf2ruyv2rx.us-east-2.rds.amazonaws.com
+  POSTGRES_HOST: database-1.ccgffw2f91up.us-east-2.rds.amazonaws.com
   AWS_PROFILE: default
   JWT_SECRET: testing
