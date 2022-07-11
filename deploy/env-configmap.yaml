@@ -10,7 +10,7 @@ data:
   AWS_BUCKET: udagram-micro-spermy-dev
   AWS_REGION: us-east-2
   URL: http://localhost:8100
-  POSTGRES_DB: udagramdb
-  POSTGRES_HOST: database-1.ccpf2ruyv2rx.us-east-2.rds.amazonaws.com
+  POSTGRES_DB: udagramsammydev
+  POSTGRES_HOST: database.cc8u8rzbf6ob.us-east-1.rds.amazonaws.com
   AWS_PROFILE: default
   JWT_SECRET: testing
